@@ -16,6 +16,9 @@
 12)Check string reverse or not
 
 
+16)Python Program To Capitalize The First And Last Character Of Each Word In A String.
+
+
 #1 code:
 s='kunal kumar roy patna'
 print(s[::-1])
@@ -116,3 +119,13 @@ def fun(data):
             lst.append(ch)
             print(ch,'-',data.count(ch))
 fun(data='i am amit kumar')
+
+#16 code:
+def string_captilize(str1):
+    str2=str1.title()
+    string=''
+    for word in str2.split():
+        string=string+word[:-1] + word[-1].upper()+ ' '
+    print(string)
+string_captilize('how are you')
+
